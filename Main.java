@@ -18,5 +18,6 @@ public class Main {
 
         pessoaRepository.salvar(newPessoa);
 
+        sc.close();
     }
 }
