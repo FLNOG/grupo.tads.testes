@@ -9,7 +9,6 @@ Este projeto tem como objetivo exemplificar o cadastro de pessoas em um sistema,
 
 # Documentação do IDF0
 <img width="876" height="731" alt="Image" src="https://github.com/user-attachments/assets/3374240f-10b0-4736-82fe-ad1dbfa115d9" />
-# Documentação do ICMO
 
 # Casos de uso em UML 
 <img width="876" height="360" alt="Image" src="https://github.com/user-attachments/assets/a3b52fe9-edd2-4f4c-9eda-df75fb3daf89" />
