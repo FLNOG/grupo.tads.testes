@@ -1,6 +1,12 @@
 # grupo.tads.testes
-
-Este projeto tem como objetivo exemplificar o cadastro de pessoas em um sistema, utilizando a persistência em arquivos .json, e gerando um arquivo para cada cadastro.
+Curso: Analise e Desenvolvimento de Sistemas 
+Turma: 4NC
+Intergrantes:
+* Felipe Nogueira Silva
+* Ranielly Evellyn Cunha
+* Stefany Caroline Ferreira Sampaio
+  
+Este projeto tem como objetivo exemplificar o cadastro de pessoas em um sistema, utilizando a persistência em arquivos .json, e gerando um arquivo para cada cadastro
 
 # Documentação do IDF0
 # Documentação do ICMO
