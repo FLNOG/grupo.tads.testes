@@ -15,3 +15,4 @@ Este projeto tem como objetivo exemplificar o cadastro de pessoas em um sistema,
 <img width="876" height="360" alt="Image" src="https://github.com/user-attachments/assets/a3b52fe9-edd2-4f4c-9eda-df75fb3daf89" />
 
 # Diagrama de classe em UML
+<img width="876" height="677" alt="Image" src="https://github.com/user-attachments/assets/a666f4f3-4fc5-46e1-9f29-2426e7b83662" />
