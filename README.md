@@ -1,7 +1,6 @@
 # grupo.tads.testes
-- Curso: Analise e Desenvolvimento de Sistemas 
-- Turma: 4NC
-- Intergrantes:
+Curso: Analise e Desenvolvimento de Sistemas - Turma: 4NC
+* Intergrantes:
 * Felipe Nogueira Silva
 * Ranielly Evellyn Cunha
 * Stefany Caroline Ferreira Sampaio
