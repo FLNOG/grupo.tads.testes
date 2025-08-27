@@ -8,14 +8,13 @@ import java.sql.*;
 public class PessoaRepository {
 
     public void cadastraPesssoa(Pessoa pessoa) {
-        String sql =  "INSERT INTO cadastro_pessoa (id, name, age) VALUES (?, ?, ?)";
+        String sql =  "INSERT INTO cadastro_pessoa (name, age) VALUES (?, ?)";
 
         try (Connection connection = ConnectionFactory.getConnection()){
             PreparedStatement stmt = connection.prepareStatement(sql);
 
-            stmt.setInt(1, pessoa.getId());
-            stmt.setString(2, pessoa.getNome());
-            stmt.setInt(3, pessoa.getIdade());
+            stmt.setString(1, pessoa.getNome());
+            stmt.setInt(2, pessoa.getIdade());
 
             int sucesso = stmt.executeUpdate();
             if (sucesso > 0) System.out.println("Sucesso ao cadastrar Pessoa");

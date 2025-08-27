@@ -19,6 +19,5 @@ public class Main {
         pessoaRepository.cadastraPesssoa(newPessoa);
 
         sc.close();
-
     }
 }
