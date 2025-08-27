@@ -18,8 +18,9 @@ public class PessoaRepository {
             stmt.setInt(3, pessoa.getIdade());
 
             int sucesso = stmt.executeUpdate();
-
             if (sucesso > 0) System.out.println("Sucesso ao cadastrar Pessoa");
+
+            ConnectionFactory.closeConnection(connection);
 
         } catch (SQLException e) {
             System.err.println("Erro ao cadastrar usuário: " + e.getMessage());
