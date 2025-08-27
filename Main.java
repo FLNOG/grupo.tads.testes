@@ -14,9 +14,9 @@ public class Main {
         int idade = sc.nextInt();
 
         Pessoa newPessoa = new Pessoa(nome, idade);
-        PessoaRepository pessoaRepository = new PessoaRepository();
 
-        pessoaRepository.salvar(newPessoa);
+        PessoaRepository pessoaRepository = new PessoaRepository();
+        pessoaRepository.cadastraPesssoa(newPessoa);
 
         sc.close();
     }

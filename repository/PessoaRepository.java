@@ -1,24 +1,28 @@
 package repository;
 
 import model.Pessoa;
+import util.ConnectionFactory;
 
-import java.io.File;
-import java.io.FileWriter;
+import java.sql.*;
 
 public class PessoaRepository {
-    private static final String pasta = "cadastros";
 
-    public void salvar(Pessoa pessoa) {
-        try {
-            File file = new File(pasta, pessoa.getNome() + ".json");
-            try (FileWriter writer = new FileWriter(file)) {
-                String json = "{\n" +
-                        "  \"nome\": \"" + pessoa.getNome() + "\",\n" +
-                        "  \"idade\": " + pessoa.getIdade() + "\n" +
-                        "}";
-                writer.write(json);
-            }
-        } catch (Exception e) {
+    public void cadastraPesssoa(Pessoa pessoa) {
+        String sql =  "INSERT INTO cadastro_pessoa (id, name, age) VALUES (?, ?, ?)";
+
+        try (Connection connection = ConnectionFactory.getConnection()){
+            PreparedStatement stmt = connection.prepareStatement(sql);
+
+            stmt.setInt(1, pessoa.getId());
+            stmt.setString(2, pessoa.getNome());
+            stmt.setInt(3, pessoa.getIdade());
+
+            int sucesso = stmt.executeUpdate();
+
+            if (sucesso > 0) System.out.println("Sucesso ao cadastrar Pessoa");
+
+        } catch (SQLException e) {
+            System.err.println("Erro ao cadastrar usuário: " + e.getMessage());
             e.printStackTrace();
         }
     }
