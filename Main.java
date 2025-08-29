@@ -18,6 +18,8 @@ public class Main {
         PessoaRepository pessoaRepository = new PessoaRepository();
         pessoaRepository.cadastraPesssoa(newPessoa);
 
+        pessoaRepository.listarPessoa();
+
         sc.close();
     }
 }

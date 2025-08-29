@@ -7,11 +7,11 @@ Curso: Analise e Desenvolvimento de Sistemas - Turma: 4NC
   
 Este projeto tem como objetivo exemplificar o cadastro de pessoas em um sistema, utilizando a persistência em arquivos .json, e gerando um arquivo para cada cadastro
 
-# Documentação do IDF0
-<img width="876" height="731" alt="Image" src="https://github.com/user-attachments/assets/3374240f-10b0-4736-82fe-ad1dbfa115d9" />
-
-# Casos de uso em UML 
-<img width="876" height="360" alt="Image" src="https://github.com/user-attachments/assets/a3b52fe9-edd2-4f4c-9eda-df75fb3daf89" />
+# Diagrama IDEF0
+![Diagrama de IDEF0](img/Diagrama_IDEF0.png)
 
 # Diagrama de classe em UML
-<img width="876" height="677" alt="Image" src="https://github.com/user-attachments/assets/a666f4f3-4fc5-46e1-9f29-2426e7b83662" />
+![Diagrama de Classes](img/Diagrama_de_classes.png)
+
+# Casos de uso em UML 
+![Diagrama de Casos de Uso](img/Diagrama_de_casos.png)

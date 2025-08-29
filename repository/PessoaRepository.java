@@ -22,7 +22,37 @@ public class PessoaRepository {
             ConnectionFactory.closeConnection(connection);
 
         } catch (SQLException e) {
-            System.err.println("Erro ao cadastrar usuário: " + e.getMessage());
+            System.err.println("Erro ao cadastrar Pessoa: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    public void listarPessoa() {
+        String sql = "SELECT * FROM cadastro_pessoa";
+
+        try (Connection connection = ConnectionFactory.getConnection()){
+            PreparedStatement stmt = connection.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+
+            System.out.println("=== Lista de Pessoas Cadastradas ===");
+
+            boolean encontrou = false;
+            while (rs.next()) {
+                encontrou = true;
+                int id = rs.getInt("id");
+                String nome = rs.getString("name");
+                int idade = rs.getInt("age");
+
+                System.out.println("ID: " + id + " | Nome: " + nome + " | Idade: " + idade);
+            }
+
+            if (!encontrou) {
+                System.out.println("Nenhuma pessoa encontrada no banco de dados.");
+            }
+            ConnectionFactory.closeConnection(connection);
+
+        } catch (SQLException e) {
+            System.err.println("Erro ao listar Pessoas: " + e.getMessage());
             e.printStackTrace();
         }
     }
