@@ -18,6 +18,4 @@ public class Pessoa {
     public int getIdade() {
         return idade;
     }
-
-    public void setId(int id) { this.id = id; }
 }
