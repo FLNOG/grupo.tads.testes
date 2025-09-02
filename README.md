@@ -15,3 +15,25 @@ Este projeto tem como objetivo exemplificar o cadastro de pessoas em um sistema,
 
 # Casos de uso em UML 
 ![Diagrama de Casos de Uso](img/Diagrama_de_casos.png)
+
+# Casos de testes 
+
+Nome simples
+Entrada: Nome = "Ana", Idade = 25
+Resultado esperado: Cadastro realizado com sucesso.
+
+Nome com espaços
+Entrada: Nome = "Maria Silva", Idade = 30
+Resultado esperado: Cadastro realizado com sucesso.
+
+Nome com caracteres acentuados
+Entrada: Nome = "José Álvares", Idade = 40
+Resultado esperado: Cadastro realizado com sucesso.
+
+Nome vazio
+Entrada: Nome = "", Idade = 20
+Resultado esperado: Erro "Nome não pode ser vazio".
+
+Idade negativa
+Entrada: Nome = "Carlos", Idade = -5
+Resultado esperado: Erro "Idade inválida".
